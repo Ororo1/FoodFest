@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFest - Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/STYLESHEETS/styles.css" />
+  </head>
+  <body>
+    <header class="schedule-hero">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">SCHEDULE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+      <section class="blog-hero container text-center py-5">
+        <h1>Be a Sponsor!</h1>
+        <p>
+          Contribute towards the success of FoodFest.
+        </p>
+        <button class="btn-ticket tick" id="myBtn"><a>Get Tickets</a></button>
+      </section>
+
+    </header>
+    <main class="py-5">
+      <div class="container">
+        <section id="contact">
+          <h2 class="text-center mb-4">Get in Touch</h2>
+          <form class="max-width-500 mx-auto">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone number:</label>
+              <input type="tel" class="form-control" name="phone" id="phone" />
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn submit btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">FoodFest Registration</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registrationForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+                <div class="invalid-feedback">Please provide your name.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid email address.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                  name="dob"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide your date of birth.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="attendance" class="form-label">Are you:</label>
+                <select
+                  class="form-select"
+                  id="attendance"
+                  name="attendance"
+                  required
+                >
+                  <option value="">Choose an option</option>
+                  <option value="alone">Coming Alone</option>
+                  <option value="partner">Coming with a Partner</option>
+                  <option value="family">Coming with Family</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+
+              <div class="mb-3" id="familyDetails" style="display: none">
+                <label for="kids" class="form-label">Number of Kids:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="kids"
+                  name="kids"
+                  min="0"
+                  placeholder="Enter number of kids"
+                />
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn submit btn-primary px-4">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div
+              id="successMessage"
+              class="alert alert-success mt-3"
+              style="display: none"
+            >
+              Registration successful! Check your email for the ticket
+              confirmation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2024 FoodFest. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script src="/ASSETS/SCRIPT/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFest - Schedule</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/STYLESHEETS/styles.css" />
+  </head>
+  <body>
+    <header class="schedule-hero">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">SPONSORSHIP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container text-center py-5 blog-hero">
+        <h1>Event Schedule</h1>
+        <p>Discover the exciting lineup of activities planned for FoodFest!</p>
+        <button class="btn-ticket tick" id="myBtn"><a>Get Tickets</a></button>
+      </section>
+    </header>
+
+    <section id="schedule" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Day 1: Celebration of Flavors</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="schedule-card h-100">
+              <h3>Cooking Demonstration</h3>
+              <p><strong>Time:</strong> 10:00 AM - 11:30 AM</p>
+              <p><strong>Location:</strong> Main Stage</p>
+              <p>
+                Join top chefs as they showcase their culinary expertise live.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="schedule-card h-100">
+              <h3>Live Music Performance</h3>
+              <p><strong>Time:</strong> 12:00 PM - 1:30 PM</p>
+              <p><strong>Location:</strong> Music Arena</p>
+              <p>Enjoy performances by local bands and solo artists.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="schedule-card h-100">
+              <h3>Baking Workshop</h3>
+              <p><strong>Time:</strong> 2:00 PM - 3:30 PM</p>
+              <p><strong>Location:</strong> Workshop Tent</p>
+              <p>Learn the art of baking from professional pastry chefs.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="schedule-card h-100">
+              <h3>Food Tasting</h3>
+              <p><strong>Time:</strong> 4:00 PM - 5:30 PM</p>
+              <p><strong>Location:</strong> Vendor Area</p>
+              <p>
+                Sample a variety of cuisines and vote for your favorite dish.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="schedule-card h-100">
+              <h3>Night Party</h3>
+              <p><strong>Time:</strong> 8:00 PM - 10:00 PM</p>
+              <p><strong>Location:</strong> Outdoor Garden</p>
+              <p>
+                Unwind under the stars with live DJ music and a special dinner
+                buffet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-center mb-4 mt-5">Day 2: Culinary Adventures</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="schedule-card h-100">
+              <h3>Healthy Cooking Seminar</h3>
+              <p><strong>Time:</strong> 10:00 AM - 11:30 AM</p>
+              <p><strong>Location:</strong> Seminar Hall</p>
+              <p>Discover tips and recipes for healthier cooking habits.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="schedule-card h-100">
+              <h3>Kids' Cooking Competition</h3>
+              <p><strong>Time:</strong> 12:00 PM - 1:30 PM</p>
+              <p><strong>Location:</strong> Kids Zone</p>
+              <p>
+                Watch young chefs showcase their culinary skills in a fun
+                competition.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="schedule-card h-100">
+              <h3>International Cuisine Showcase</h3>
+              <p><strong>Time:</strong> 2:00 PM - 3:30 PM</p>
+              <p><strong>Location:</strong> Global Pavilion</p>
+              <p>Experience dishes from around the world, all in one place.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="schedule-card h-100">
+              <h3>Closing Ceremony</h3>
+              <p><strong>Time:</strong> 4:00 PM - 5:00 PM</p>
+              <p><strong>Location:</strong> Main Stage</p>
+              <p>Wrap up the event with awards and acknowledgments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">FoodFest Registration</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registrationForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+                <div class="invalid-feedback">Please provide your name.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid email address.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="dob" class="form-label">Date of Birth:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                  name="dob"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide your date of birth.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="attendance" class="form-label">Are you:</label>
+                <select
+                  class="form-select"
+                  id="attendance"
+                  name="attendance"
+                  required
+                >
+                  <option value="">Choose an option</option>
+                  <option value="alone">Coming Alone</option>
+                  <option value="partner">Coming with a Partner</option>
+                  <option value="family">Coming with Family</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+
+              <div class="mb-3" id="familyDetails" style="display: none">
+                <label for="kids" class="form-label">Number of Kids:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="kids"
+                  name="kids"
+                  min="0"
+                  placeholder="Enter number of kids"
+                />
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn submit btn-primary px-4">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div
+              id="successMessage"
+              class="alert alert-success mt-3"
+              style="display: none"
+            >
+              Registration successful! Check your email for the ticket
+              confirmation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 FoodFest. All rights reserved.</p>
+        <p>CONTACT US</p>
+        <div class="social-links">
+          <a href="mailto:foodfest24@gmail.com">foodfest24@gmail.com</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="/ASSETS/SCRIPT/script.js"></script>
+  </body>
+</html>
